@@ -86,11 +86,27 @@ nav {
     display: block;
     line-height: 90px;
     margin: 0 auto;
+    color: #777777;
 }
 .nav-item {
     float: left;
     padding-left: 5px;
     padding-right: 5px;
+}
+.nav-item a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item a:link, .nav-item a:visited {
+    color: #777777;
+    text-decoration-line: none;
+}
+.nav-item a:hover {
+    /* font-weight: bold; */
+    text-decoration-line: underline;
+    background: #4aaaa5;
+    color: white;
 }
 
 #maincontent {
@@ -118,13 +134,13 @@ nav {
 
 
 
-footer {
+#footercontainer {
     background: #666666;
-    /* height: 50px; */
+    height: 68px;
     border-top: 8px solid #4aaaa5;
 }
 
-footer p {
+#footercontainer p {
     color: #dddddd;
     margin: 0 auto;
     /* margin-top: 40px; */
@@ -140,6 +156,9 @@ footer p {
     padding: 12px 40px;
     border: 0;
 }
+.but-submit:hover {
+    background: #11706b;
+}
 
 
 /* ul */
@@ -154,9 +173,10 @@ footer p {
     /* float: left; */
     display: inline-block;
 }
-#portfolio-block li img {
+#portfolio-block li .portfolio-itemcontainer img {
     width: 275px;
     height: 205px;
+    display: inline-block;
 }
 
 .portfolio-itemcontainer {
@@ -164,12 +184,26 @@ footer p {
     margin-top: 35px;
     margin-bottom: 20px;
     margin-right: 40px;
+    opacity: 0.8;
+}
+.portfolio-itemcontainer:hover {
+    opacity: 1;
 }
 
-.portfolio-itemcontainer .imgtxtcontainer {
+.imgtxtcontainer {
     position: absolute; /* Position the background text */
     bottom: 14px;
     width: 100%;
     color: #ffffff; /* Grey text */
-    background: #4aaaa588; /* Black background with 0.5 opacity */
+    background: #4aaaa599; /* Black background with 0.5 opacity */
+    opacity: 0.9;
+}
+.imgtxtcontainer:hover {
+    opacity: 1;
+    background: #4aaaa5dd;
+    color: white;
+}
+.imgtxtcontainer a:link,  .imgtxtcontainer a:visited{
+    color: #ffffff;
+    text-decoration-line: none;
 }
