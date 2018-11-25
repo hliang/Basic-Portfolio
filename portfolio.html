@@ -3,33 +3,89 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>hliang's Portfolio</title>
+    <title>Your Name's Portfolio</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!-- header and nav bar -->
-    <header>
-        <h1>Your Name</h1>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+    <!-- nav bar -->
+    <div id="navcontainer" class="container">
+        <nav>
+
+            <!-- <div class="container"> -->
+            <ul id="navbar">
+                <li class="nav-item"><a href="index.html">About</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- </div> -->
+            <!-- <div class="container"> -->
+            <h1 id="yourname" class="__vertcenter">Your Name</h1>
+            <!-- </div> -->
+
+        </nav>
+    </div>
 
     <!-- main content -->
-    <h2>Portfolio</h2>
-    <ul>
-        <li><img src="assets/images/100.png"><p>Game ABC</p></li>
-        <li><img src="assets/images/100.png"><p>Mob App ABC</p></li>
-        <li><img src="assets/images/100.png"><p>Website ABC</p></li>
-        <li><img src="assets/images/100.png"><p>Data Analysis</p></li>
-        <li><img src="assets/images/100.png"><p>Hobby Projects</p></li>
-    </ul>
+    <div class="container">
+        <div id="maincontent" class="container">
+            <h2>Portfolio</h2>
+            <hr style="height:3px; border:none; background-color:#dddddd">
+            <!-- <div class="container"> -->
+                <ul id="portfolio-block">
+                    <li>
+                        <div class="portfolio-itemcontainer text-center">
+                            <img src="assets/images/100.png">
+                            <div class="imgtxtcontainer">
+                                <h3>Game ABC 111</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-itemcontainer text-center">
+                            <img src="assets/images/100.png">
+                            <div class="imgtxtcontainer">
+                                <h3>Mob App 222</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-itemcontainer text-center">
+                            <img src="assets/images/100.png">
+                            <div class="imgtxtcontainer">
+                                <h3>Website ABC333</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-itemcontainer text-center">
+                            <img src="assets/images/100.png">
+                            <div class="imgtxtcontainer">
+                                <h3>Data Analysis</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="portfolio-itemcontainer text-center">
+                            <img src="assets/images/100.png">
+                            <div class="imgtxtcontainer">
+                                <h3>Hobby Projects</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            <!-- </div> -->
+        </div>
+    </div>
 
     <!-- Footer  -->
-    <footer>Copyright ©</footer>
+    <footer class="container text-center">
+        <p>Copyright ©</p>
+    </footer>
 </body>
 
 </html>

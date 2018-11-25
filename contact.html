@@ -3,35 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>hliang's Portfolio</title>
+    <title>Your Name's Portfolio</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!-- header and nav bar -->
-    <header>
-        <h1>Your Name</h1>
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </header>
+    <!-- nav bar -->
+    <div id="navcontainer" class="container">
+        <nav>
+            
+            <!-- <div class="container"> -->
+                <ul id="navbar">
+                    <li class="nav-item"><a href="index.html">About</a></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item">|</li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            <!-- </div> -->
+            <!-- <div class="container"> -->
+                <h1 id="yourname" class="__vertcenter">Your Name</h1>
+            <!-- </div> -->
+
+        </nav>
+    </div>
 
     <!-- main content -->
-    <h2>Contact</h2>
-    <form>
-        Name<br>
-        <input type="text" name="form_name"><br>
-        Email<br>
-        <input type="text" name="form_email"><br>
-        Message<br>
-        <textarea rows="5"></textarea><br>
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <div id="maincontent" class="container">
+            <h2>Contact</h2>
+            <hr style="height:3px; border:none; background-color:#dddddd">
+            <form>
+                <p>Name<br>
+                <input type="text" name="form_name" placeholder="John Smith" style="width:100%"><br>
+                </p>
+                <p>Email<br>
+                <input type="text" name="form_email" placeholder="example@gmail.com" style="width:100%"><br>
+                </p>
+                <p>Message<br>
+                <textarea rows="5" style="width:100%"></textarea><br>
+                <input type="submit" value="Submit" class="but-submit">
+                </p>
+            </form>
+        </div>
+    </div>
 
     <!-- Footer  -->
-    <footer>Copyright ©</footer>
+    <footer class="container text-center">
+        <p>Copyright ©</p>
+    </footer>
 </body>
 
 </html>

@@ -1,7 +1,175 @@
 * {
     box-sizing: border-box;
+    /* border: 2px solid blue; */
 }
 
-* {
-    border: 2px solid blue;
+.container {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+
+.clearfix {
+    overflow: auto;
+}
+/* .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+body {
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    /* display: block; */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/light-grey-terrazzo.png);
+    font-size: 18px;
+    /* line-height: 150%; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+#navcontainer {
+    /* position: fixed; */
+    display: block;
+    margin: auto;
+    background: #ffffff;
+    /* height: 50px; */
+    width: 100%;
+    text-align: center;
+    border: 2px solid #cccccc;
+    clear: both;
+}
+
+nav {
+    display: inline-block;
+    /* margin: 0 auto; */
+    width: 960px;
+    /* height: 90px; */
+    /* position: relative; */
+    /* float: left; */
+    text-align: left;
+}
+
+.vertcenter {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0%, -50%);
+}
+
+#yourname {
+    /* float: left; */
+    line-height: 90px;
+    color: #ffffff;
+    background: #4aaaa5;
+    display: inline-block;
+    padding: 0 1em;
+    margin: 0 auto;
+}
+
+#navbar {
+    list-style: none;
+    float: right;
+    display: block;
+    line-height: 90px;
+    margin: 0 auto;
+}
+.nav-item {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#maincontent {
+    /* display: block; */
+    /* float: left; */
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    /* min-height: calc(100vh - 100px); */
+    background: #ffffff;
+    border: 2px solid #dddddd;
+}
+#bioimg {
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+}
+#maincontent p {
+    line-height: 200%;
+    color: #777777;
+}
+
+
+
+footer {
+    background: #666666;
+    /* height: 50px; */
+    border-top: 8px solid #4aaaa5;
+}
+
+footer p {
+    color: #dddddd;
+    margin: 0 auto;
+    /* margin-top: 40px; */
+    font-size: 70%;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+
+.but-submit {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 12px 40px;
+    border: 0;
+}
+
+
+/* ul */
+#portfolio-block {
+    list-style: none;
+    /* float: left; */
+    display: block;
+    margin: 0 auto;
+    padding-inline-start: 0px;
+}
+#portfolio-block li {
+    /* float: left; */
+    display: inline-block;
+}
+#portfolio-block li img {
+    width: 275px;
+    height: 205px;
+}
+
+.portfolio-itemcontainer {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.portfolio-itemcontainer .imgtxtcontainer {
+    position: absolute; /* Position the background text */
+    bottom: 14px;
+    width: 100%;
+    color: #ffffff; /* Grey text */
+    background: #4aaaa588; /* Black background with 0.5 opacity */
 }
